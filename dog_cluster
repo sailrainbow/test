@@ -28,4 +28,32 @@
       &lt;rosparam file="$(find qr_move_base)/config/teb_local_planner_params.yaml" command="load" /&gt;
 
 ```
+
+
+
+
+ * 3D_multi_nav
+  ```
+  mkdir test1
+  cd test1
+
+  ##copy the code from /home/D_cluster/multi_sim/multi/multi_nav/src
+
+  catkin_make
+  source devel/setup.bash
+  roslaunch lite3_slam slam.launch
+  ## ERROR2
+  
+  
+  ```
+  troubleshoot 
+  * ERROR2
+    - The setTau function meets Nan
+    - [ WARN] [1743933949.411026265, 753.152000000]: Moved backwards in time (probably because ROS clock was reset), re-publishing joint transforms!
+    #按‘1，2’正常，按‘5’有时会出现以上错误提示，无错误提醒时不发挥作用，无法进入集群模式
+    #按‘w，a，s，d'有数值出现，但狗不移动
+    
+  * Solution:
+    - 
+
   
