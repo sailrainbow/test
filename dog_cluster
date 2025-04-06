@@ -17,4 +17,5 @@
   * ERROR1
     - can't find the file
   * Solution:
+    - #修改test1/src/lite3_control/qr_move_bash/launch/move_base.launch
   
