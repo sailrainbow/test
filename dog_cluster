@@ -17,5 +17,15 @@
   * ERROR1
     - can't find the file
   * Solution:
-    - #修改test1/src/lite3_control/qr_move_bash/launch/move_base.launch
+    - #modified the file "test1/src/lite3_control/qr_move_bash/launch/move_base.launch"  Copy and Paste the following ..
+    ```
+      &lt;!-- &lt;param name="controller_frequency" value="1"/&gt; --&gt;
+   
+    &lt;rosparam file="$(find qr_move_base)/config/costmap_common_params.yaml" command="load" ns="global_costmap" /&gt;
+      &lt;rosparam file="$(find qr_move_base)/config/costmap_common_params.yaml" command="load" ns="local_costmap" /&gt;
+      &lt;rosparam file="$(find qr_move_base)/config/local_costmap_params.yaml" command="load" /&gt;
+      &lt;rosparam file="$(find qr_move_base)/config/global_costmap_params.yaml" command="load" /&gt;
+      &lt;rosparam file="$(find qr_move_base)/config/teb_local_planner_params.yaml" command="load" /&gt;
+
+```
   
