@@ -1,3 +1,4 @@
+Trouble
 (base) C:\Users\谢妤帆>conda activate test
 
 (test) C:\Users\谢妤帆>conda install python=3.10
