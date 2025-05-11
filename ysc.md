@@ -17,49 +17,49 @@
 lite_cog/                    
 │
 ├── deb/                       
-├── drivers/                          
-├── nav/                        
-├── others/                     
-├── pipeline/
-|   ├──bulid
-|   ├──devel
-|   └──src
-│       ├── pipeline_tracking/
-|           ├──action
-|           ├──data
-|           ├──Readme
-|           ├──scripts
-|           ├──tools
-|               ├──location_record.py
-|               └──location_record_en.py
-|           ├──CMakeLists.txt
-|           └──package.xml
-|      └── CMakeLists.txt 
-├── slam/                     
-├── system/
-|   ├──map
-|      ├──lite3.pcd
-|      ├──lite3.pgm
-|      └──lite3.yaml
-|   ├──scripts
-|      ├──depth_camera
-|      ├──lidar
-|         ├──start_livox.sh
-|         └──start_lslidar.sh
-|      ├──nav
-|         └──start_nav.sh
-|      ├──slam
-|         ├──gridmap.sh
-|         ├──save_map.sh
-|         └──start_slam.sh
-|      ├──transfer
-|         └──start_transfer.sh
-|      └──voa
-|   ├──all_start.sh
-|   └──kill_all.sh
-├── track/                          
-├── transfer                   
-└── voa                  
+├── drivers/					#                    
+├── nav/    					#                    
+├── others/                    			#
+├── pipeline/					#
+|   ├──bulid					#
+|   ├──devel					#
+|   └──src					#
+│       ├── pipeline_tracking/			#
+|           ├──action				#
+|           ├──data				#
+|           ├──Readme				#
+|           ├──scripts				#
+|           ├──tools				#
+|               ├──location_record.py		#
+|               └──location_record_en.py	#
+|           ├──CMakeLists.txt			#
+|           └──package.xml			#
+|      └── CMakeLists.txt 			#
+├── slam/					#                     
+├── system/					#
+|   ├──map					#
+|      ├──lite3.pcd				#
+|      ├──lite3.pgm				#
+|      └──lite3.yaml				#
+|   ├──scripts					#
+|      ├──depth_camera				#
+|      ├──lidar					#
+|         ├──start_livox.sh			#
+|         └──start_lslidar.sh			#
+|      ├──nav					#
+|         └──start_nav.sh			#
+|      ├──slam					#
+|         ├──gridmap.sh				#
+|         ├──save_map.sh			#
+|         └──start_slam.sh			#
+|      ├──transfer				#
+|         └──start_transfer.sh			#
+|      └──voa					#
+|   ├──all_start.sh				#
+|   └──kill_all.sh				#
+├── track/                         		#
+├── transfer                  			#	
+└── voa                  			#
 ```
 ## 步骤：
 * 要求完整包括文字说明，等
