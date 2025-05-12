@@ -40,7 +40,7 @@ lite_cog/                			#项目根目录
 |         ├──LICENSE
 |         ├──nodelet_plugins.xml
 |         ├──package.xml
-|         └──README.md
+|         └──README.md				#功能包使用说明文档
 │      ├──move_base
 │      ├──navigation
 │      ├──ndt_omp
