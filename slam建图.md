@@ -14,16 +14,43 @@
 		- 
 * Directory structure：(标注Demo所需关键文件)
 ```
-lite_cog/                    
+lite_cog/                			#项目根目录
 │
-├── deb/                       
+├── deb/                       			#
 ├── drivers/					#                    
-├── nav/    					#                    
+├── nav/
+|   ├──build/
+|   ├──devel/
+|   └──src/
+│      ├──fast_gicp
+│      ├──hdl_global_localization
+│      ├──hdl_localization/
+|         ├──apps
+|         ├──data
+|         ├──docker
+|         ├──include
+|         ├──launch/
+|            ├──hdl_localization.launch
+|            └──local_rslidar_imu.launch    	#用于改变地图路径或名称时配置所需地图名称和路径
+|         ├──msg
+|         ├──rviz
+|         ├──scripts
+|         ├──src
+|         ├──CMakeLists.txt
+|         ├──LICENSE
+|         ├──nodelet_plugins.xml
+|         ├──package.xml
+|         └──README.md
+│      ├──move_base
+│      ├──navigation
+│      ├──ndt_omp
+│      ├──teb_local_planner
+│      └──CMakeLists.txt  					#                    
 ├── others/                    			#
 ├── pipeline/					#
-|   ├──bulid					#
-|   ├──devel					#
-|   └──src					#
+|   ├──bulid/					#
+|   ├──devel/					#
+|   └──src/					#
 │       ├── pipeline_tracking/			#
 |           ├──action				#
 |           ├──data				#
@@ -35,24 +62,32 @@ lite_cog/
 |           ├──CMakeLists.txt			#
 |           └──package.xml			#
 |      └── CMakeLists.txt 			#
-├── slam/					#                     
+├── slam/
+|   ├──build/
+|   ├──devel/
+|   └──src/					#建图功能包
+|      ├──faster-lio				#构建3D点云地图(.pcd)功能包
+|      ├──map-server				#保存栅格地图(.pgm)功能包
+|      ├──octomap_mapping			
+|      ├──pcd2grid				#将三维点云地图(.pcd)转为栅格地图(.pgm)并发布
+|      └──CMakeLists.txt		                   
 ├── system/					#
-|   ├──map					#
+|   ├──map/					#
 |      ├──lite3.pcd				#
 |      ├──lite3.pgm				#
 |      └──lite3.yaml				#
-|   ├──scripts					#
+|   ├──scripts/					#
 |      ├──depth_camera				#
-|      ├──lidar					#
+|      ├──lidar/					#
 |         ├──start_livox.sh			#
 |         └──start_lslidar.sh			#
-|      ├──nav					#
+|      ├──nav/					#
 |         └──start_nav.sh			#
-|      ├──slam					#
+|      ├──slam/					#
 |         ├──gridmap.sh				#
 |         ├──save_map.sh			#
-|         └──start_slam.sh			#
-|      ├──transfer				#
+|         └──start_slam.sh			#启动建图程序的脚本
+|      ├──transfer/				#
 |         └──start_transfer.sh			#
 |      └──voa					#
 |   ├──all_start.sh				#
