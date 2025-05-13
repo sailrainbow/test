@@ -14,6 +14,36 @@
 		- 
 * Directory structure：(标注Demo所需关键文件)
 ```
+Multi_robot/
+├── pipline/
+|
+|  ├──build/
+|  ├──devel/
+|  ├──src/					#
+│  	├── pipeline_tracking/			#
+|           ├──action				#
+|           ├──data				#
+|           ├──Readme				#
+|           ├──scripts/
+|		├──__pycache__
+|		├──.vscode
+|               ├──constants.py
+|               ├──dyn_reconfigure.py
+|		├──MT.py
+|		├──pub_target.py
+|               ├──RobotCommander.py
+|		├──start_MT.sh			#可以在Rviz中执行多目标跟踪、目标发布等任务
+|		├──TA_minmax.py
+|               ├──Task.py
+|               ├──TaskPoint.py
+|               └──TaskTransfer.py		#
+|           ├──tools				#
+|           ├──CMakeLists.txt			#
+|           └──package.xml			#
+|   └── CMakeLists.txt 				#
+└──.catkin_workspace				#用于标记catkin工作区间的位置
+
+
 lite_cog/                			#项目根目录
 │
 ├── deb/                       			#
@@ -33,7 +63,8 @@ lite_cog/                			#项目根目录
 |            ├──hdl_localization.launch
 |            └──local_rslidar_imu.launch    	#用于改变地图路径或名称时配置所需地图名称和路径
 |         ├──msg
-|         ├──rviz
+|         ├──rviz/
+|            └──hdl_localization.rviz		#用于打开Rviz
 |         ├──scripts
 |         ├──src
 |         ├──CMakeLists.txt
@@ -45,7 +76,7 @@ lite_cog/                			#项目根目录
 │      ├──navigation
 │      ├──ndt_omp
 │      ├──teb_local_planner
-│      └──CMakeLists.txt  					#                    
+│      └──CMakeLists.txt                
 ├── others/                    			#
 ├── pipeline/					#
 |   ├──bulid/					#
@@ -55,7 +86,7 @@ lite_cog/                			#项目根目录
 |           ├──action				#
 |           ├──data				#
 |           ├──Readme				#
-|           ├──scripts				#
+|           ├──scripts
 |           ├──tools				#
 |               ├──location_record.py		#
 |               └──location_record_en.py	#
@@ -67,30 +98,30 @@ lite_cog/                			#项目根目录
 |   ├──devel/
 |   └──src/					#建图功能包
 |      ├──faster-lio				#构建3D点云地图(.pcd)功能包
-|      ├──map-server				#保存栅格地图(.pgm)功能包
+|      ├──map_server				#保存栅格地图(.pgm)功能包
 |      ├──octomap_mapping			
 |      ├──pcd2grid				#将三维点云地图(.pcd)转为栅格地图(.pgm)并发布
 |      └──CMakeLists.txt		                   
 ├── system/					#
-|   ├──map/					#
+|   ├──map/					#用于保存建好的地图
 |      ├──lite3.pcd				#
 |      ├──lite3.pgm				#
 |      └──lite3.yaml				#
 |   ├──scripts/					#
 |      ├──depth_camera				#
-|      ├──lidar/					#
+|      ├──lidar/				#
 |         ├──start_livox.sh			#
-|         └──start_lslidar.sh			#
+|         └──start_lslidar.sh			#启动激光雷达驱动
 |      ├──nav/					#
 |         └──start_nav.sh			#
 |      ├──slam/					#
-|         ├──gridmap.sh				#
-|         ├──save_map.sh			#
-|         └──start_slam.sh			#启动建图程序的脚本
+|         ├──gridmap.sh				#创建栅格地图
+|         ├──save_map.sh			#保存地图
+|         └──start_slam.sh			#启动建图程序
 |      ├──transfer/				#
 |         └──start_transfer.sh			#
 |      └──voa					#
-|   ├──all_start.sh				#
+|   ├──all_start.sh				#实现开机自启动
 |   └──kill_all.sh				#
 ├── track/                         		#
 ├── transfer                  			#	
