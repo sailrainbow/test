@@ -51,8 +51,8 @@ lite_cog/                			#项目根目录
 |   ├──build/					#编译生成目录，存放编译中间文件
 |   ├──devel/					#开发环境目录，存放编译后的可执行文件
 |   └──src/					#导航功能源代码
-│      ├──fast_gicp
-│      ├──hdl_global_localization
+│      ├──fast_gicp				#基于GICP算法，提供快速的点云配准算法实现，用于高精度地图匹配
+│      ├──hdl_global_localization		#全局定位功能包，用于在已知地图中确定初始位置
 │      ├──hdl_localization/			#定位功能包
 |         ├──apps
 |         ├──data
