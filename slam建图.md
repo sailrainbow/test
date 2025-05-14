@@ -16,7 +16,6 @@
 ```
 Multi_robot/
 ├── pipline/
-|
 |  ├──build/
 |  ├──devel/
 |  ├──src/					#
@@ -79,8 +78,8 @@ lite_cog/                			#项目根目录
 │      └──CMakeLists.txt                
 ├── others/                    			#
 ├── pipeline/					#
-|   ├──bulid/					#
-|   ├──devel/					#
+|   ├──bulid/					#编译生成目录
+|   ├──devel/					#开发环境目录
 |   └──src/					#
 │       ├── pipeline_tracking/			#
 |           ├──action				#
@@ -94,8 +93,8 @@ lite_cog/                			#项目根目录
 |           └──package.xml			#
 |      └── CMakeLists.txt 			#
 ├── slam/
-|   ├──build/
-|   ├──devel/
+|   ├──build/					#编译生成目录
+|   ├──devel/					#开发环境目录
 |   └──src/					#建图功能源代码
 |      ├──faster-lio				#构建3D点云地图(.pcd)
 |      ├──map_server				#保存和加载栅格地图(.pgm)
@@ -107,23 +106,23 @@ lite_cog/                			#项目根目录
 |      ├──lite3.pcd				#3D点云地图文件
 |      ├──lite3.pgm				#2D栅格地图图像文件
 |      └──lite3.yaml				#地图配置文件，定义地图原点、分辨率等参数
-|   ├──scripts/					#
-|      ├──depth_camera				#
+|   ├──scripts/					#系统脚本目录
+|      ├──depth_camera				#深度相机相关脚本
 |      ├──lidar/				#激光雷达相关脚本
 |         ├──start_livox.sh			#启动Livox系列激光雷达
 |         └──start_lslidar.sh			#启动LS系列激光雷达
-|      ├──nav/					
+|      ├──nav/					#导航相关脚本
 |         └──start_nav.sh			#启动导航功能
-|      ├──slam/					#
+|      ├──slam/					#SLAM相关脚本
 |         ├──gridmap.sh				#创建2D栅格地图
 |         ├──save_map.sh			#保存地图
 |         └──start_slam.sh			#启动建图程序
-|      ├──transfer/				#数据传输脚本
+|      ├──transfer/				#数据传输相关脚本
 |         └──start_transfer.sh			#启动数据传输功能
-|      └──voa					#
+|      └──voa					#语音交互相关脚本
 |   ├──all_start.sh				#实现开机自启动
 |   └──kill_all.sh				#一键停止所有模块
-├── track/                         		#
+├── track                         		#
 ├── transfer                  			#	
 └── voa                  			#
 ```
