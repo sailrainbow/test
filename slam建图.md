@@ -139,7 +139,7 @@ lite_cog/                			#项目根目录
 修改如下命令：
 .
 
-  export ROS_HOSTNAME=本机IP地址           #从机在WiFi下对应的IP地址
+  export ROS_HOSTNAME=本机IP地址           #从机在WiFi下对应的IP地址 
   export ROS_MASTER_URI=http://主机IP:11311
   export ROS_IP=本机IP
 .
