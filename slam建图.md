@@ -127,6 +127,7 @@ lite_cog/                			#项目根目录
 主机中打开终端，输入命令：gedit ~/.bashrc
 
 修改如下命令：
+
 .
 
    export ROS_HOSTNAME=本机IP地址
@@ -137,6 +138,7 @@ lite_cog/                			#项目根目录
 从机中打开终端，输入命令：gedit ~/.bashrc
 
 修改如下命令：
+
 .
 
   export ROS_HOSTNAME=本机IP地址           #从机在WiFi下对应的IP地址 
