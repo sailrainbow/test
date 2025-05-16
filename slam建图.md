@@ -1,17 +1,10 @@
 # Demo：（name）
 
 ## 前期了解：
-* 本次实验需要涉及到哪些文件这些文件的作用是什么？关键参数说明（如果重要），目录结构说明
 * example：
 * Parameter：
-	1. param_1:速度参数
-	2. param_2:方向参数
-	3. ...
 * File：
-	1. file_1: 这个文件控制移动（isolation）
-		- 关键函数：move(parameter_1,parameter_2,...)
-	2. file_2:
-		- 
+      
 * Directory structure：(标注Demo所需关键文件)
 ```
 Multi_robot/
