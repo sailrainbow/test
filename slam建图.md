@@ -38,7 +38,7 @@ Multi_robot/
 └──.catkin_workspace				
 
 
-lite_cog/                			#项目根目录
+/home/ysc/lite_cog/                		#项目根目录
 │
 ├── deb/                       			
 ├── drivers/					                    
@@ -48,7 +48,7 @@ lite_cog/                			#项目根目录
 |   └──src/					#导航功能源代码
 │      ├──fast_gicp				#基于GICP算法，提供快速的点云配准算法实现，用于高精度地图匹配
 │      ├──hdl_global_localization		#全局定位功能包，用于在已知地图中确定初始位置
-│      ├──hdl_localization/			#定位功能包
+│      ├──hdl_localization/			#负责机器狗在导航中的定位功能
 |         ├──apps
 |         ├──data
 |         ├──docker
@@ -67,7 +67,7 @@ lite_cog/                			#项目根目录
 |         ├──package.xml			#ROS功能包描述文件
 |         └──README.md				#功能包使用说明
 │      ├──move_base				#实现路径规划和导航控制
-│      ├──navigation
+│      ├──navigation				#负责机器狗在导航中的路径规划功能
 │      ├──ndt_omp
 │      ├──teb_local_planner
 │      └──CMakeLists.txt                
